@@ -1,0 +1,52 @@
+//Topography
+
+$primary-color: #272a31;
+$secondary-color: #ec5242;
+$secondary-colorTwo: #d3d3d3;
+$fontFamily:"Lato", sans-serif;
+$btn-color-fanta : orange;
+$h-size : 25px;
+$p-size: 18px;
+$line-h : 1.8px;
+$caps : small-caps;
+$weight: 400;
+
+/* Mixins*/
+
+@mixin flexbox($flex-di: row) {
+  display: flex;
+  flex-direction: $flex-di;
+  flex-wrap: wrap;
+}
+
+@mixin topography {
+  color: $primary-color;
+  font-family: $fontFamily;
+  font-weight: $weight;
+}
+
+// Placeholders classes for exteding
+
+%message-shared {
+  border: 1px solid $secondary-color;
+  color: $btn-color-fanta;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+  
+header {
+  background: url(../images/mobile_intro_bg.png);
+  background-repeat: no-repeat;
+  border: 2px solid red;
+}
+nav #menu-icon {
+  width: 54px;
+  height: 50px;
+}
