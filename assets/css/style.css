@@ -486,6 +486,10 @@
     margin: 0 auto;
   }
 
+  .event img {
+    width: 500px;
+  }
+
   .event .content {
     position: absolute;
     top: 0;
@@ -568,7 +572,6 @@
 }
 
 /* Desktop version */
-
 @media screen and (min-width: 768px) {
   .logo {
     border: 2px solid green;
