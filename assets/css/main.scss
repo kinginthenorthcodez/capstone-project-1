@@ -5,8 +5,9 @@ $secondary-color: #ec5242;
 $secondary-colorTwo: #d3d3d3;
 $fontFamily:"Lato", sans-serif;
 $btn-color-fanta : orange;
-$h-size : 25px;
+$h-size : 40px;
 $p-size: 18px;
+$size-1: 28px;
 $line-h : 1.8px;
 $caps : small-caps;
 $weight: 400;
@@ -40,13 +41,457 @@ $weight: 400;
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    
+  header {
+    background: url(../images/mobile_intro_bg.png);
+    background-repeat: no-repeat;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav .menu-items {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 80px;
+    margin-top: 20px;
+    padding: 30px;
+    z-index: 20;
+    background: #272a31;
+  }
+
+  .nav .menu-item {
+    padding-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: ease-in-out 2s;
+  }
+
+  .nav .menu-item a {
+    text-decoration: none;
+    width: 100%;
+    color: $secondary-colorTwo;
+    font-family: $fontFamily;
+    font-size: $h-size;
+    font-weight: $weight;
+    text-align: center;
+ 
+  }
+
+  .nav .menu-item:hover {
+    background: #36393f;
+    transform: scale3d(0.5, 0.5, -5);
+  }
+
+  .nav .active {
+    border: 1px solid $secondary-color;
+    padding: 20px;
+  }
+
+  #menu-btn {
+    width: 54px;
+    height: 50px;
+  }
+
+  .nav .hide-menu {
+    display: none !important;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .hero-section {
+    margin-top: 20px;
+  }
+
+  .hero-section .call {
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: $size-1;
+    font-weight: $weight;
+  }
+
+  .hero-section .call-title {
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: $h-size;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-section .description {
+    @include topography();
+    font-size: $p-size;
+    background: #fff;
+    padding-top: 20px;
+    margin-top: 80px;
+    span {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+
+  .venue-highlight p {
+    @include topography();
+  }
+  .venue-highlight .date-stamp {
+    font-size: $size-1;
+    font-weight: 700;
+  }
+  .venue-highlight .venue {
+    font-size: $p-size;
+  }
+
+  .main-program {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 10;
+    background: url(../images/pattern_bg.png);
+    background-color: #272a31;
+  }
+
+  .main-program .program-title h2 {
+    @include topography();
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $secondary-colorTwo;
+  }
+
+  .main-program .program-title hr {
+    width: 150px;
+    height: 5px;
+    color: $secondary-color;
+    margin: 0 auto;
+  }
+
+  .main-program .programs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .main-program .programs .program {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    gap: 20px;
+    background: #6a6b6d;
+    opacity: 0.8;
+  }
+
+  .main-program .program .program-icon {
+    width: 50px;
+    height: auto;
+  }
+  .main-program .program h3 {
+    @include topography();
+    width: 200px;
+    color: $secondary-color;
+    font-weight: 700;
+    margin: 5px;
+  }
+
+  .main-program .program p {
+    width: 350px;
+    @include topography();
+    color: #fff;
+    padding-right: 15px;
+    margin-right: 10px;
+  }
+
+  #call-out {
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  #call-out button {
+    @include topography();
+    width: 98%;
+    height: 100px;
+    border-style: none;
+    background: $secondary-color;
+    color: $secondary-colorTwo;
+    font-size: $size-1;
+  }
+
+  .speakers-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .speakers-sec .speaker-title h2 {
+    @include topography();
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primary-color;
+  }
+
+  .speakers-sec .speaker-title hr {
+    width: 150px;
+    height: 5px;
+    color: $secondary-color;
+    margin: 0 auto;
+  }
+
+  .speakers-sec .speakers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .speakers-sec .speakers .speaker {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .speakers-sec .speaker .img-profile {
+    width: 150px;
+    height: auto;
+  }
+
+  .speakers-sec .speakers .speaker-info {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 30px;
+  }
+
+  .speakers-sec .speakers .speaker-name {
+    @include topography();
+    color: $primary-color;
+    font-size: $size-1;
+    font-weight: 700;
+  }
+
+  .speakers-sec .speakers .role {
+    @include topography();
+    font-size: $p-size;
+    margin-top: -15px;
+    color: $secondary-color;
+  }
+
+  .speakers-sec .speakers .bio {
+    @include topography();
+    font-size: $p-size;
+    color: $primary-color;
+  }
+
+  .speaker-hide {
+    display: none;
+  }
+
+  .more-btn button {
+    @include topography();
+    width: 98%;
+    height: 90px;
+    border-style: none;
+    background: $secondary-colorTwo;
+    color: $primary-color;
+    font-size: $size-1;
+  }
+
+  /* about page */
+
+  .about-header {
+    background: url(../images/about_bg_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero-section-about {
+    margin-top: 20px;
+  }
+
+  .hero-section-about .call {
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: $size-1;
+    font-weight: $weight;
+  }
+
+  .hero-section-about .call-title {
+    text-align: center;
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: $h-size;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-section-about .description {
+    @include topography();
+    font-size: $p-size;
+    background: #fff;
+    padding-top: 20px;
+    text-align: center;
+    span {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+
+  .hero-section-about .venue-highlight p {
+    @include topography();
+    width: 75%;
+    line-height: 1.7;
+  }
+  .hero-section-about .venue-highlight .date-stamp {
+    font-size: $size-1;
+    font-weight: 700;
+    text-align: center;
+  }
+  .hero-section-about .venue-highlight .venue {
+    font-size: $p-size;
+    text-align: center;
+  }
+
+  .about-main h3 {
+    text-align: center;
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-size: $h-size;
+    font-weight: 700;
+  }
+
+  .about-main p {
+    @include topography();
+    text-align: center;
+    font-size: $p-size;
+    background: #fff;
+    padding-top: 20px;
+    text-align: center;
+    span {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+
+  .about-events h3 {
+    @include topography();
+    color: $primary-color;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .about-events hr {
+    width: 200px;
+    height: 3px;
+    margin: 0 auto;
+    color: $secondary-color;
+  }
+
+  .about-events p {
+    @include topography();
+    font-size: $p-size;
+    text-align: center;
+  }
+
+  .Events{
+    position: relative;
+  }
+
+  .event{
+    position: relative;
+  }
+
+ 
+  .overlay {
+    position: relative;
+    width: 450px;
+    background-color: #ec5242;
+    z-index: 15;
+    margin-top: 20px;
+    mix-blend-mode: multiply;
+  }
+
+  .event img{
+    width: 400px;
+    height: auto;
+    color: var(--secondary);
+    background: #ec5242;
+    opacity: 0.2;
+        
+  }
+
+   /* Partner */
+  .partner-title .hr-lines{
+    width: 100px;
+    height: 1px;
+    background: #ec5242;
+    margin: 0 auto;
+ }
+
+  .partner-items .partner img{
+    width: 100px;
+  }
+   /* Footer section */
   
-header {
-  background: url(../images/mobile_intro_bg.png);
-  background-repeat: no-repeat;
-  border: 2px solid red;
+  .footer-logo{
+    position: relative;
+    right: 5%;
+     
+  }
+  
+  .footer-logo .img-logo{
+    width: 50px;
+    margin: 0;
+  }
+  
+  .footer-logo .logo-text{
+    color: var(--secondary);
+    font-weight: bolder;
+  }
+  
+  .footer-logo .side-logo-text{
+    background: -webkit-linear-gradient(#ec5242,#3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .footer-info {
+    color: var(--primary);
+    font-family: var(--fontFamily);
+    display: flex;
+    padding: 20px;
+  }
+  
 }
-nav #menu-icon {
-  width: 54px;
-  height: 50px;
+
+@media screen and (min-width: 768px) {
+  .logo {
+    border: 2px solid green;
+    width: 400px;
+    height: 50px;
+  }
 }

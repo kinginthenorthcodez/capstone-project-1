@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Creative Space</title>
 </head>
 <body>
   <header class="header container-fluid p-3 m-3">
-    <div class="nav container-fluid d-flex">
-        <img src="./assets/images/mobile_menu.png" id="menu-icon" alt="menu icon">
+    <div class="nav container-fluid">
+        <img src="./assets/images/mobile_menu.png" id="menu-btn" alt="menu icon">
         <nav class="menu">
           <div class="logo">
             <a class="navbar-brand d-none d-md-block text-black logo" href="index.html">
@@ -20,15 +20,15 @@
               <span class="logo-text">&lt;Creative</span><span class="side-logo-text"> Space &gt;</span>
             </a>
           </div>
-          <ul class="menu-items">
+          <ul class="menu-items mobile-menu hide-menu">
             <li class="menu-item">
-              <a href="#">About</a>
+              <a href="about.html">About</a>
             </li>
             <li class="menu-item">
-              <a href="#">Program</a>
+              <a href="#program">Program</a>
             </li>
             <li class="menu-item">
-              <a href="#">Join</a>
+              <a href="#call-out">Join</a>
             </li>
             <li class="menu-item">
               <a href="#">Sponsor</a>
@@ -36,96 +36,151 @@
             <li class="menu-item">
               <a href="#">News</a>
             </li>
-            <li class="menu-item">
-              <a href="#">GC Capmpaign</a>
+            <li class="menu-item active">
+              <a href="#campaign">GC Campaign</a>
             </li>
           </ul>
         </nav>
     </div>
     </div>
-  </header>
-  <section class="hero-section container-fluid pt-2 w-100">
-    <div class="container py-md-4 mt-md-4">
-        <div class="row py-3">
-         <div class="col px-5">
-         <h2 class="call">"Hello! Sharing World!"</h2>
-         <h1 class="call-title">Creative Space<br>Zambia Summit 2022</h1>
-         <p class="description">Zambia's creative minds making impact and Technology<br> breakthrough are comming
-         together to <span>re-think</span> and <span>re-imagine</span><span> design</span> </p>
-         <div class="venue-highlight">
-         <p class="date-stamp">2022.02.12(SAT) ~ 13(SUN)</p>
-        <p class="venue">@Mulugushi Cofference Center Lusaka, called Creative Space Summit</p>
+    <section class="hero-section container-fluid pt-2 w-100">
+      <div class="container-fluid py-md-4 mt-md-4">
+          <div class="row px-3 py-3 mt-5">
+           <div class="col px-0">
+           <h2 class="call">"Hello! Sharing World!"</h2>
+           <h1 class="call mt-3">Creative Space<br>Zambia Summit 2022</h1>
+           <p class="description">Zambia's creative minds making impact and Technology<br> breakthrough are comming
+           together to <span>re-think</span> and <span>re-imagine</span><span> design</span> </p>
+           <div class="venue-highlight">
+           <p class="date-stamp">2022.02.12(SAT) ~ 13(SUN)</p>
+          <p class="venue">@Mulugushi Cofference Center Lusaka, called Creative Space Summit</p>
+           </div>
+          </div>
          </div>
         </div>
-       </div>
-      </div>
-</section>
+  </section>
+  </header>
+  
 
 <!-- main program -->
-<section class="main-program">
+<section class="main-program container-fluid pt-5 pb-5" id="program">
   <div class="program-title">
     <h2>Main Program</h2>
-    <hr>
+    <hr class="line">
   </div>
   <div class="programs">
     <div class="program">
-      <img src="" alt="lecture icon" class="program-icon">
+      <img src="./assets/images/lecture.png" alt="lecture icon" class="program-icon">
       <h3>Lecture</h3>
       <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
     </div>
     <div class="program">
-      <img src="" alt="Exhibition icon" class="program-icon">
+      <img src="./assets/images/exhibition.png" alt="Exhibition icon" class="program-icon">
       <h3>CC Exhibition</h3>
       <p>Appreciate various creations applying CC license of artists, organized from Art Center Nabi.</p>
 
     </div>
     <div class="program">
-      <img src="" alt="Forum icon" class="program-icon">
+      <img src="./assets/images/forum.png" alt="Forum icon" class="program-icon">
       <h3>Forum</h3>
       <p>Have the time to share your thoughts and opinions with the experts for each topic</p>
     </div>
     <div class="program">
-      <img src="" alt="Workshop icon" class="program-icon">
+      <img src="./assets/images/workshop.png" alt="Workshop icon" class="program-icon">
       <h3>Workshop</h3>
       <p>Try creating your own work using open source license rather than just watching</p>
     </div>
     <div class="program">
-      <img src="" alt="CC Ignite icon" class="program-icon">
+      <img src="./assets/images/ignite.png" alt="CC Ignite icon" class="program-icon">
       <h3>CC Ignite</h3>
       <p>Get opportunities to network with CC affiliates around the word, also after the summit.</p>
     </div>
   </div>
-  <div class="call-out">
-    <button type="button">Join CC Global Summit 2015</button>
+  <div id="call-out" class="mt-5 mb-3">
+    <button type="button" class="d">Join CC Global Summit 2015</button>
   </div>
 </section>
 
 <!-- Speakers section -->
-<section class="speakers-sec">
+<section class="speakers-sec container-fluid mb-5 pt-5 pb-5" id="campaign">
   <div class="speaker-title">
     <h2>Featured Speaker</h2>
-    <hr>
+    <hr class="line mt-3">
   </div>
-  <div class="speakers">
+  <div class="speakers mt-5">
     <div class="speaker">
-      <img src="" alt="profile image" class="img-profile">
+      <img src="./assets/images/speakers/peter.jpg" alt="profile image" class="img-profile">
       <div class="speaker-info">
         <h3 class="speaker-name">Yochai Benkler</h3>
-        <p class="bio"></p>
-        <p class="intro"></p>
-      </div> 
+        <p class="role">Founder of HPML,Fashion Designe</p>
+        <p class="bio">Peter is an emerging fashion designer and award winner of Lusaka July</p>
+      </div>
+      </div>
       <div class="speaker">
-        <img src="" alt="profile image" class="img-profile">
+        <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
         <div class="speaker-info">
           <h3 class="speaker-name">Yochai Benkler</h3>
-          <p class="bio"></p>
-          <p class="intro"></p>
+          <p class="role">Founder of Bongo Hive,CEO</p>
+          <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
         </div> 
-    </div>
-    <div class="more-btn">
-      <button type="button">More <img src="" alt="more button"></button>
-    </div>
   </div>
+  <div class="speaker-hide">
+    <div class="speaker">
+      <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
+      <div class="speaker-info">
+        <h3 class="speaker-name">Yochai Benkler</h3>
+        <p class="role">Founder of Bongo Hive,CEO</p>
+        <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
+      </div> 
+   </div>
+
+   <div class="speaker">
+    <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
+    <div class="speaker-info">
+      <h3 class="speaker-name">Yochai Benkler</h3>
+      <p class="role">Founder of Bongo Hive,CEO</p>
+      <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
+    </div> 
+ </div>
+
+ <div class="speaker">
+  <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
+  <div class="speaker-info">
+    <h3 class="speaker-name">Yochai Benkler</h3>
+    <p class="role">Founder of Bongo Hive,CEO</p>
+    <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
+  </div> 
+</div>
+
+<div class="speaker">
+  <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
+  <div class="speaker-info">
+    <h3 class="speaker-name">Yochai Benkler</h3>
+    <p class="role">Founder of Bongo Hive,CEO</p>
+    <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
+  </div> 
+</div>
+<div class="speaker">
+  <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
+  <div class="speaker-info">
+    <h3 class="speaker-name">Yochai Benkler</h3>
+    <p class="role">Founder of Bongo Hive,CEO</p>
+    <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
+  </div> 
+</div>
+<div class="speaker">
+  <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
+  <div class="speaker-info">
+    <h3 class="speaker-name">Yochai Benkler</h3>
+    <p class="role">Founder of Bongo Hive,CEO</p>
+    <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
+  </div> 
+</div>
+  </div>
+    <div class="more-btn">
+    <button type="button">More <img src="./assets/images/arrow_down.png" alt="more icon"></button>
+    </div>
 </section>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
