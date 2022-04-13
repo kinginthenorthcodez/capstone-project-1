@@ -41,6 +41,61 @@ $weight: 400;
   margin: 0;
 }
 
+@media screen and (max-width: 390px) {
+  .main-program .programs .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 500px;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .main-program .program h3 {
+    width: 100%;
+    max-width: 327px;
+    position: relative;
+    text-align: center;
+    color: $secondary-color;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+  .main-program .program p {
+    width: 100%;
+    max-width: 327px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .speakers-sec .speakers .speaker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .speakers-sec .speaker .img-profile {
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .speakers-sec .speakers .speaker-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
     
   header {
@@ -194,8 +249,9 @@ $weight: 400;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
+    max-height: 500px;
     gap: 20px;
+    padding: 20px;
     background: #6a6b6d;
     opacity: 0.8;
   }
@@ -352,6 +408,8 @@ $weight: 400;
     @include topography();
     font-size: $p-size;
     background: #fff;
+    width: 100%;
+    max-width: 700px;
     padding-top: 20px;
     text-align: center;
     span {
@@ -362,13 +420,13 @@ $weight: 400;
 
   .hero-section-about .venue-highlight p {
     @include topography();
-    width: 75%;
+    width: 375px;
     line-height: 1.7;
   }
   .hero-section-about .venue-highlight .date-stamp {
     font-size: $size-1;
     font-weight: 700;
-    text-align: center;
+    width: 375px;
   }
   .hero-section-about .venue-highlight .venue {
     font-size: $p-size;
@@ -386,6 +444,8 @@ $weight: 400;
   .about-main p {
     @include topography();
     text-align: center;
+    width: 100%;
+    max-width: 700px;
     font-size: $p-size;
     background: #fff;
     padding-top: 20px;
@@ -394,6 +454,15 @@ $weight: 400;
       color: $secondary-color;
       font-weight: 600;
     }
+  }
+
+  .highlight {
+    width: 375px;
+  }
+
+  .highlight .img-logo {
+    width: 150px;
+    height: auto;
   }
 
   .about-events h3 {
@@ -417,34 +486,58 @@ $weight: 400;
     text-align: center;
   }
 
-  .Events{
+  .events{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .event{
     position: relative;
+    width: 500px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
- 
-  .overlay {
-    position: relative;
-    width: 450px;
-    background-color: #ec5242;
-    z-index: 15;
-    margin-top: 20px;
-    mix-blend-mode: multiply;
+  .event .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 82, 66);
+    background: rgba($color: #ec5242, $alpha: 0.5);
   }
 
-  .event img{
-    width: 400px;
-    height: auto;
-    color: var(--secondary);
-    background: #ec5242;
-    opacity: 0.2;
-        
+  .event .content p {
+    display: flex;
+    @include topography();
+    color: #fff;
+    justify-content: center;
+    margin-top: 25%;
   }
 
    /* Partner */
+ 
+  .speaker-partner {
+    background: #3e4044;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 700px;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   }
+
+  .partner-title {
+    @include topography();
+    color: #fff;
+  }
+
   .partner-title .hr-lines{
     width: 100px;
     height: 1px;
@@ -459,7 +552,7 @@ $weight: 400;
   
   .footer-logo{
     position: relative;
-    right: 5%;
+    left: 5%;
      
   }
   
@@ -483,11 +576,13 @@ $weight: 400;
     color: var(--primary);
     font-family: var(--fontFamily);
     display: flex;
+    flex-direction: column;
     padding: 20px;
   }
   
 }
 
+/* Desktop version */
 @media screen and (min-width: 768px) {
   .logo {
     border: 2px solid green;
