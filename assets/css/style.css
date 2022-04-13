@@ -1,4 +1,4 @@
-/* Mixins*/
+/* Mixins */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -59,6 +59,7 @@
     align-items: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   header {
     background: url(../images/mobile_intro_bg.png);
@@ -87,11 +88,10 @@
   }
 
   .nav .menu-item {
-    padding-top: 40px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     transition: ease-in-out 2s;
   }
 
@@ -158,6 +158,12 @@
     padding-top: 20px;
     margin-top: 80px;
   }
+
+  .about-main p span {
+    color: #ec5242;
+    font-weight: 600;
+  }
+
   .hero-section .description span {
     color: #ec5242;
     font-weight: 600;
@@ -184,13 +190,12 @@
     width: 100%;
     justify-content: center;
     align-content: center;
-    gap: 10;
+    gap: 10px;
     background: url(../images/pattern_bg.png);
     background-color: #272a31;
   }
 
   .main-program .program-title h2 {
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     width: 100%;
@@ -199,6 +204,13 @@
     flex-direction: column;
     align-items: center;
     color: #d3d3d3;
+  }
+
+  .about-events hr {
+    width: 200px;
+    height: 3px;
+    margin: 0 auto;
+    color: #ec5242;
   }
 
   .main-program .program-title hr {
@@ -231,19 +243,51 @@
     height: auto;
   }
 
-  .main-program .program h3 {
+  .about-main h3 {
+    text-align: center;
     color: #272a31;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .about-events h3 {
+    font-family: "Lato", sans-serif;
+    color: #272a31;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .main-program .program h3 {
+    font-family: "Lato", sans-serif;
     width: 200px;
     color: #ec5242;
     font-weight: 700;
     margin: 5px;
   }
 
+  .about-main p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    font-size: 18px;
+    background: #fff;
+    padding-top: 20px;
+  }
+
+  .about-events p {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
+
   .main-program .program p {
     width: 350px;
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #fff;
@@ -257,8 +301,18 @@
     margin: 0 auto;
   }
 
-  #call-out button {
+  .more-btn button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    width: 98%;
+    height: 90px;
+    border-style: none;
+    background: #d3d3d3;
     color: #272a31;
+    font-size: 28px;
+  }
+
+  #call-out button {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     width: 98%;
@@ -276,7 +330,6 @@
   }
 
   .speakers-sec .speaker-title h2 {
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     width: 100%;
@@ -320,16 +373,13 @@
   }
 
   .speakers-sec .speakers .speaker-name {
-    color: #272a31;
     font-family: "Lato", sans-serif;
-    font-weight: 400;
     color: #272a31;
     font-size: 28px;
     font-weight: 700;
   }
 
   .speakers-sec .speakers .role {
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -338,7 +388,6 @@
   }
 
   .speakers-sec .speakers .bio {
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -347,18 +396,6 @@
 
   .speaker-hide {
     display: none;
-  }
-
-  .more-btn button {
-    color: #272a31;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    width: 98%;
-    height: 90px;
-    border-style: none;
-    background: #d3d3d3;
-    color: #272a31;
-    font-size: 28px;
   }
 
   /* about page */
@@ -401,6 +438,7 @@
     padding-top: 20px;
     text-align: center;
   }
+
   .hero-section-about .description span {
     color: #ec5242;
     font-weight: 600;
@@ -425,31 +463,6 @@
     text-align: center;
   }
 
-  .about-main h3 {
-    text-align: center;
-    color: #272a31;
-    font-family: "Lato", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  .about-main p {
-    color: #272a31;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    width: 100%;
-    max-width: 700px;
-    font-size: 18px;
-    background: #fff;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .about-main p span {
-    color: #ec5242;
-    font-weight: 600;
-  }
-
   .highlight {
     width: 375px;
   }
@@ -457,31 +470,6 @@
   .highlight .img-logo {
     width: 150px;
     height: auto;
-  }
-
-  .about-events h3 {
-    color: #272a31;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    color: #272a31;
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .about-events hr {
-    width: 200px;
-    height: 3px;
-    margin: 0 auto;
-    color: #ec5242;
-  }
-
-  .about-events p {
-    color: #272a31;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
   }
 
   .events {
@@ -510,7 +498,6 @@
 
   .event .content p {
     display: flex;
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #fff;
@@ -533,7 +520,6 @@
   }
 
   .partner-title {
-    color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #fff;
@@ -580,7 +566,9 @@
     padding: 20px;
   }
 }
+
 /* Desktop version */
+
 @media screen and (min-width: 768px) {
   .logo {
     border: 2px solid green;

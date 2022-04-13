@@ -12,19 +12,13 @@ $line-h : 1.8px;
 $caps : small-caps;
 $weight: 400;
 
-/* Mixins*/
+/* Mixins */
 
-@mixin flexbox($flex-di: row) {
-  display: flex;
-  flex-direction: $flex-di;
-  flex-wrap: wrap;
-}
-
-@mixin topography {
-  color: $primary-color;
-  font-family: $fontFamily;
-  font-weight: $weight;
-}
+// @mixin topography {
+//   color: $primary-color;
+//   font-family: $fontFamily;
+//   font-weight: $weight;
+// }
 
 // Placeholders classes for exteding
 
@@ -97,11 +91,11 @@ $weight: 400;
 }
 
 @media screen and (max-width: 768px) {
-    
   header {
     background: url(../images/mobile_intro_bg.png);
     background-repeat: no-repeat;
   }
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -124,11 +118,10 @@ $weight: 400;
   }
 
   .nav .menu-item {
-    padding-top: 40px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     transition: ease-in-out 2s;
   }
 
@@ -140,7 +133,6 @@ $weight: 400;
     font-size: $h-size;
     font-weight: $weight;
     text-align: center;
- 
   }
 
   .nav .menu-item:hover {
@@ -188,24 +180,36 @@ $weight: 400;
   }
 
   .hero-section .description {
-    @include topography();
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
     font-size: $p-size;
     background: #fff;
     padding-top: 20px;
     margin-top: 80px;
-    span {
-      color: $secondary-color;
-      font-weight: 600;
-    }
+  }
+
+  .about-main p span {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  .hero-section .description span {
+    color: $secondary-color;
+    font-weight: 600;
   }
 
   .venue-highlight p {
-    @include topography();
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
   }
+
   .venue-highlight .date-stamp {
     font-size: $size-1;
     font-weight: 700;
   }
+
   .venue-highlight .venue {
     font-size: $p-size;
   }
@@ -216,19 +220,27 @@ $weight: 400;
     width: 100%;
     justify-content: center;
     align-content: center;
-    gap: 10;
+    gap: 10px;
     background: url(../images/pattern_bg.png);
     background-color: #272a31;
   }
 
   .main-program .program-title h2 {
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     width: 100%;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $secondary-colorTwo;
+  }
+
+  .about-events hr {
+    width: 200px;
+    height: 3px;
+    margin: 0 auto;
+    color: $secondary-color;
   }
 
   .main-program .program-title hr {
@@ -260,17 +272,54 @@ $weight: 400;
     width: 50px;
     height: auto;
   }
+
+  .about-main h3 {
+    text-align: center;
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-size: $h-size;
+    font-weight: 700;
+  }
+
+  .about-events h3 {
+    font-family: $fontFamily;
+    color: $primary-color;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+
   .main-program .program h3 {
-    @include topography();
+    font-family: $fontFamily;
     width: 200px;
     color: $secondary-color;
     font-weight: 700;
     margin: 5px;
   }
 
+  .about-main p {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    font-size: $p-size;
+    background: #fff;
+    padding-top: 20px;
+  }
+
+  .about-events p {
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    font-size: $p-size;
+    text-align: center;
+  }
+
   .main-program .program p {
     width: 350px;
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     color: #fff;
     padding-right: 15px;
     margin-right: 10px;
@@ -282,8 +331,20 @@ $weight: 400;
     margin: 0 auto;
   }
 
+  .more-btn button {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    width: 98%;
+    height: 90px;
+    border-style: none;
+    background: $secondary-colorTwo;
+    color: $primary-color;
+    font-size: $size-1;
+  }
+
   #call-out button {
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     width: 98%;
     height: 100px;
     border-style: none;
@@ -299,7 +360,8 @@ $weight: 400;
   }
 
   .speakers-sec .speaker-title h2 {
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     width: 100%;
     margin-bottom: 10px;
     display: flex;
@@ -341,37 +403,29 @@ $weight: 400;
   }
 
   .speakers-sec .speakers .speaker-name {
-    @include topography();
+    font-family: $fontFamily;
     color: $primary-color;
     font-size: $size-1;
     font-weight: 700;
   }
 
   .speakers-sec .speakers .role {
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     font-size: $p-size;
     margin-top: -15px;
     color: $secondary-color;
   }
 
   .speakers-sec .speakers .bio {
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     font-size: $p-size;
     color: $primary-color;
   }
 
   .speaker-hide {
     display: none;
-  }
-
-  .more-btn button {
-    @include topography();
-    width: 98%;
-    height: 90px;
-    border-style: none;
-    background: $secondary-colorTwo;
-    color: $primary-color;
-    font-size: $size-1;
   }
 
   /* about page */
@@ -405,55 +459,39 @@ $weight: 400;
   }
 
   .hero-section-about .description {
-    @include topography();
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
     font-size: $p-size;
     background: #fff;
     width: 100%;
     max-width: 700px;
     padding-top: 20px;
     text-align: center;
-    span {
-      color: $secondary-color;
-      font-weight: 600;
-    }
+  }
+
+  .hero-section-about .description span {
+    color: $secondary-color;
+    font-weight: 600;
   }
 
   .hero-section-about .venue-highlight p {
-    @include topography();
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
     width: 375px;
     line-height: 1.7;
   }
+
   .hero-section-about .venue-highlight .date-stamp {
     font-size: $size-1;
     font-weight: 700;
     width: 375px;
   }
+
   .hero-section-about .venue-highlight .venue {
     font-size: $p-size;
     text-align: center;
-  }
-
-  .about-main h3 {
-    text-align: center;
-    color: $primary-color;
-    font-family: $fontFamily;
-    font-size: $h-size;
-    font-weight: 700;
-  }
-
-  .about-main p {
-    @include topography();
-    text-align: center;
-    width: 100%;
-    max-width: 700px;
-    font-size: $p-size;
-    background: #fff;
-    padding-top: 20px;
-    text-align: center;
-    span {
-      color: $secondary-color;
-      font-weight: 600;
-    }
   }
 
   .highlight {
@@ -465,39 +503,22 @@ $weight: 400;
     height: auto;
   }
 
-  .about-events h3 {
-    @include topography();
-    color: $primary-color;
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .about-events hr {
-    width: 200px;
-    height: 3px;
-    margin: 0 auto;
-    color: $secondary-color;
-  }
-
-  .about-events p {
-    @include topography();
-    font-size: $p-size;
-    text-align: center;
-  }
-
-  .events{
+  .events {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  .event{
+  .event {
     position: relative;
     width: 500px;
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  .event img {
+    width: 500px;
   }
 
   .event .content {
@@ -512,14 +533,15 @@ $weight: 400;
 
   .event .content p {
     display: flex;
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     color: #fff;
     justify-content: center;
     margin-top: 25%;
   }
 
-   /* Partner */
- 
+  /* Partner */
+
   .speaker-partner {
     background: #3e4044;
     margin: 0 auto;
@@ -531,47 +553,48 @@ $weight: 400;
     display: flex;
     flex-direction: column;
     padding: 20px;
-   }
+  }
 
   .partner-title {
-    @include topography();
+    font-family: $fontFamily;
+    font-weight: $weight;
     color: #fff;
   }
 
-  .partner-title .hr-lines{
+  .partner-title .hr-lines {
     width: 100px;
     height: 1px;
     background: #ec5242;
     margin: 0 auto;
- }
+  }
 
-  .partner-items .partner img{
+  .partner-items .partner img {
     width: 100px;
   }
-   /* Footer section */
-  
-  .footer-logo{
+
+  /* Footer section */
+
+  .footer-logo {
     position: relative;
     left: 5%;
-     
   }
-  
-  .footer-logo .img-logo{
+
+  .footer-logo .img-logo {
     width: 50px;
     margin: 0;
   }
-  
-  .footer-logo .logo-text{
+
+  .footer-logo .logo-text {
     color: var(--secondary);
     font-weight: bolder;
   }
-  
-  .footer-logo .side-logo-text{
-    background: -webkit-linear-gradient(#ec5242,#3e4044);
+
+  .footer-logo .side-logo-text {
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .footer-info {
     color: var(--primary);
     font-family: var(--fontFamily);
@@ -579,7 +602,6 @@ $weight: 400;
     flex-direction: column;
     padding: 20px;
   }
-  
 }
 
 /* Desktop version */
