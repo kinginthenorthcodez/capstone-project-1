@@ -11,7 +11,19 @@
 </head>
 <body>
   <header class="header container-fluid p-3 m-3">
-    <div class="nav container-fluid">
+    <div class="profile-settings d-flex align-items-baseline justify-content-end">
+      <div class=" profile d-flex align-items-baseline">
+       <i class="fa fa-facebook p-3"></i>
+       <i class="fa fa-twitter p-3"></i>
+       
+       <ul class="nav top">
+           <li class="nav-item"><a href="#" class="nav-link">English</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">My Page</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+       </ul>
+   </div>
+   </div>
+    <div class="nav  desktop container-fluid">
         <img src="./assets/images/mobile_menu.png" id="menu-btn" alt="menu icon">
         <nav class="menu">
           <div class="logo">
@@ -31,7 +43,7 @@
               <a href="#call-out">Join</a>
             </li>
             <li class="menu-item">
-              <a href="#">Sponsor</a>
+              <a href="#sposor">Sponsor</a>
             </li>
             <li class="menu-item">
               <a href="#">News</a>
@@ -43,7 +55,7 @@
         </nav>
     </div>
     <section class="hero-section container-fluid pt-2 w-100">
-      <div class="container-fluid py-md-4 mt-md-4">
+      <div class="container-fluid inner-hero py-md-4 mt-md-4">
           <div class="row px-3 py-3 mt-5">
            <div class="col px-0">
            <h2 class="call">"Hello! Sharing World!"</h2>
@@ -96,6 +108,7 @@
     </div>
   </div>
   <div id="call-out" class="mt-5 mb-3">
+    <a href="#" > SEE THE WHOLE PROGRAM</a>
     <button type="button" class="d">Join CC Global Summit 2015</button>
   </div>
 </section>
@@ -123,8 +136,7 @@
           <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
         </div> 
       </div>
-  <div class="speaker-hide">
-    <div class="speaker">
+    <div class="speaker speaker-hide">
       <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
       <div class="speaker-info">
         <h3 class="speaker-name">Yochai Benkler</h3>
@@ -133,7 +145,7 @@
       </div> 
    </div>
 
-   <div class="speaker">
+   <div class="speaker speaker-hide">
     <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
     <div class="speaker-info">
       <h3 class="speaker-name">Yochai Benkler</h3>
@@ -142,7 +154,7 @@
     </div> 
  </div>
 
- <div class="speaker">
+ <div class="speaker speaker-hide">
   <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
   <div class="speaker-info">
     <h3 class="speaker-name">Yochai Benkler</h3>
@@ -151,7 +163,7 @@
   </div> 
 </div>
 
-<div class="speaker">
+<div class="speaker speaker-hide">
   <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
   <div class="speaker-info">
     <h3 class="speaker-name">Yochai Benkler</h3>
@@ -159,7 +171,7 @@
     <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
   </div> 
 </div>
-<div class="speaker">
+<div class="speaker speaker-hide">
   <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
   <div class="speaker-info">
     <h3 class="speaker-name">Yochai Benkler</h3>
@@ -167,7 +179,7 @@
     <p class="bio"> Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.</p>
   </div> 
 </div>
-<div class="speaker">
+<div class="speaker speaker-hide">
   <img src="./assets/images/speakers/Lukonga-Lindunda.jpg" alt="profile image" class="img-profile">
   <div class="speaker-info">
     <h3 class="speaker-name">Yochai Benkler</h3>
@@ -176,11 +188,59 @@
   </div> 
 </div>
 </div>
-</div>
     <div class="more-btn">
     <button type="button">More <img src="./assets/images/arrow_down.png" alt="more icon"></button>
     </div>
 </section>
+
+
+<section class="speaker-partner partner-hide container-fluid mb-5 mt-5" id="sposor">
+  <div class="container-fluid partners">
+      <div class="partner-title">
+          <h3 class="text-center text-white pt-3">Partner</h3>
+          <div class="hr-lines pt-0"> </div>
+      </div>
+      <ul class="list-unstyled d-flex align-items-baseline flex-wrap gap-3 p-3 m-3 justify-content-center partner-items">
+          <li class="list-item partner">
+              <img src="./assets/images/partners/bongo.png" alt="Partner">
+          </li>
+          <li class="list-item partner">
+            <img src="./assets/images/partners/dstv.png" alt="Partner">
+        </li>
+        <li class="list-item partner">
+            <img src="./assets/images/partners/liquid.png" alt="Partner">
+        </li>
+        <li class="list-item partner">
+            <img src="./assets/images/partners/Microsoft-Logo-PNG.png" alt="Partner">
+        </li>
+        <li class="list-item partner">
+            <img src="./assets/images/partners/meta.jpg" alt="Partner">
+        </li>
+        <li class="list-item partner">
+            <img src="./assets/images/partners/tedx.png" alt="Partner">
+        </li>
+        <li class="list-item partner">
+            <img src="./assets/images/partners/MultiChoiceZambialogo.jpg" alt="Partner">
+        </li>
+      </ul>
+  </div>
+</section>
+<footer class="container-fluid footer-home-hide bg-white d-flex g-5 p-3 mb-4 justify-content-around">
+    <div class="footer-logo">
+   <a class="navbar-brand text-black d-flex" href="index.html">
+              <div class="containe-fliud d-flex mt-5">
+                <img src="./assets/images/logo/logo.svg" class="img-logo" alt="logo">
+                <div class="logo-container d-flex flex-column">
+                  <span class="logo-text m-1 fs-1">&lt;Creative Space &gt;</span><span class="side-logo-text m-1 fs-2"> Zambia Summit 2022</span>
+                </div>
+              </div>
+              </a>
+    </div>
+    <div class="footer-info text-dark">
+      <p> Building safe coommunities to power creative innovations <br>and designs</p>
+      <p> 2022 Creative Space Sumit, Some Rights Reserved ⬇️</p>
+    </div>
+</footer>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>

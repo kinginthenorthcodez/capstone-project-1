@@ -91,6 +91,10 @@ $weight: 400;
 }
 
 @media screen and (max-width: 768px) {
+  .profile-settings {
+    display: none !important;
+  }
+
   header {
     background: url(../images/mobile_intro_bg.png);
     background-repeat: no-repeat;
@@ -331,6 +335,10 @@ $weight: 400;
     margin: 0 auto;
   }
 
+  #call-out a {
+    display: none !important;
+  }
+
   .more-btn button {
     font-family: $fontFamily;
     font-weight: $weight;
@@ -425,7 +433,7 @@ $weight: 400;
   }
 
   .speaker-hide {
-    display: none;
+    display: none !important;
   }
 
   /* about page */
@@ -572,7 +580,15 @@ $weight: 400;
     width: 100px;
   }
 
+  .partner-hide {
+    display: none;
+  }
+
   /* Footer section */
+
+  .footer-home-hide {
+    display: none !important;
+  }
 
   .footer-logo {
     position: relative;
@@ -606,9 +622,539 @@ $weight: 400;
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .logo {
-    border: 2px solid green;
-    width: 400px;
+  .profile-settings {
+    background: #36393f;
+    width: 100%;
     height: 50px;
+  }
+
+  .profile-settings .profile {
+    position: relative;
+    right: 10%;
+    color: $secondary-colorTwo;
+  }
+
+  nav .menu-items .menu-item a {
+    text-decoration: none;
+    padding: 10px;
+    color: $primary-color;
+  }
+
+  nav .menu-items a:focus,
+  nav .menu-items a:active {
+    color: $secondary-color;
+  }
+
+  nav .menu-items a:hover {
+    border: 2px solid $secondary-color;
+  }
+
+  .profile-settings .nav .nav-item a {
+    color: $secondary-colorTwo;
+    font-family: $fontFamily;
+  }
+
+  .nav #menu-btn {
+    display: none;
+  }
+
+  .nav .menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+    background: rgb(247, 245, 245);
+  }
+
+  nav .img-logo {
+    width: 50px;
+    margin: 0;
+  }
+
+  nav a.logo {
+    position: relative;
+    left: 10%;
+    color: $primary-color;
+    font-weight: $weight;
+    font-size: 30px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  nav .logo-text {
+    color: $secondary-color;
+    font-weight: bolder;
+  }
+
+  nav .side-logo-text {
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  nav .menu-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    right: 10%;
+  }
+
+  nav .menu-items .menu-item {
+    font-family: $fontFamily;
+    font-size: $size-1;
+    padding: 10px;
+  }
+
+  nav .menu-items .active {
+    border: 2px solid $secondary-color;
+  }
+
+  /* Header Section */
+  .hero-section {
+    background: url(../images/main_big.png);
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    height: 700px;
+  }
+
+  .hero-section .inner-hero {
+    width: 75%;
+  }
+
+  .hero-section .call {
+    display: flex;
+    justify-content: flex-start;
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: 34px;
+    font-weight: $weight;
+  }
+
+  .hero-section .call-title {
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: 68px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .hero-section .description {
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    font-size: $p-size;
+    background: #fff;
+    width: 72%;
+    position: relative;
+    top: 55px;
+    padding-top: 20px;
+  }
+
+  .about-main p span {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  .hero-section .description span {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  .footer-info p {
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-size: 20px;
+  }
+
+  .about-main p {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: $p-size;
+    background: #fff;
+    padding-top: 20px;
+  }
+
+  .hero-section .venue-highlight p {
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    line-height: 1.7;
+  }
+
+  .hero-section .venue-highlight .date-stamp {
+    font-size: 35px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .hero-section .venue-highlight .venue {
+    font-size: $p-size;
+    font-weight: bold;
+  }
+
+  .main-program {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    background: url(../images/pattern_bg.png);
+    background-color: #272a31;
+  }
+
+  .main-program .program-title h2 {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $secondary-colorTwo;
+  }
+
+  .about-events hr {
+    width: 200px;
+    height: 3px;
+    margin: 0 auto;
+    color: $secondary-color;
+  }
+
+  .main-program .program-title hr {
+    width: 150px;
+    height: 5px;
+    color: $secondary-color;
+    margin: 0 auto;
+  }
+
+  .main-program .programs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .main-program .programs .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    max-height: 500px;
+    gap: 20px;
+    padding: 10px;
+    background: #6a6b6d;
+    opacity: 0.8;
+  }
+
+  .main-program .program .program-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .main-program .program h3 {
+    font-family: $fontFamily;
+    width: 200px;
+    color: $secondary-color;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .main-program .program p {
+    width: 100%;
+    max-width: 200px;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    color: #fff;
+    text-align: center;
+    padding-right: 15px;
+    margin-right: 10px;
+  }
+
+  .more-btn button {
+    display: none;
+  }
+
+  #call-out button {
+    display: none;
+  }
+
+  #call-out a {
+    display: flex;
+    justify-content: center;
+    font-family: $fontFamily;
+    color: $secondary-colorTwo;
+    font-size: $size-1;
+  }
+
+  .speakers-sec {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .speakers-sec .speaker-title h2 {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: $primary-color;
+  }
+
+  .speakers-sec .speaker-title hr {
+    width: 150px;
+    height: 5px;
+    color: $secondary-color;
+    margin: 0 auto;
+  }
+
+  .speakers-sec .speakers {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .speakers-sec .speakers .speaker {
+    display: flex;
+    width: 50%;
+    flex-basis: 700px;
+    height: auto;
+    margin: 10px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .speakers-sec .speaker .img-profile {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+  }
+
+  .speakers-sec .speakers .speaker-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 30px;
+  }
+
+  .speakers-sec .speakers .speaker-name {
+    font-family: $fontFamily;
+    color: $primary-color;
+    font-size: $size-1;
+    font-weight: 700;
+  }
+
+  .speakers-sec .speakers .role {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    font-size: $p-size;
+    margin-top: -15px;
+    color: $secondary-color;
+  }
+
+  .speakers-sec .speakers .bio {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    font-size: $p-size;
+    color: $primary-color;
+  }
+
+  .speaker-partner {
+    background: #3e4044;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .partner-title {
+    font-family: $fontFamily;
+    font-weight: $weight;
+    color: #fff;
+  }
+
+  .partner-title .hr-lines {
+    width: 100px;
+    height: 1px;
+    background: #ec5242;
+    margin: 0 auto;
+  }
+
+  .event img {
+    width: 500px;
+  }
+
+  .partner-items .partner img {
+    width: 100px;
+  }
+
+  /* Footer section */
+
+  .footer-logo {
+    position: relative;
+    left: 5%;
+  }
+
+  .footer-logo .img-logo {
+    width: 50px;
+    margin: 0;
+  }
+
+  .footer-logo .logo-text {
+    color: var(--secondary);
+    font-weight: bolder;
+  }
+
+  .footer-logo .side-logo-text {
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .footer-info {
+    color: $primary-color;
+    font-family: $fontFamily;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* about page */
+
+  .hero-section-about {
+    background: url(../images/about_bg_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+
+  .hero-section-about .call {
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: $size-1;
+    font-weight: $weight;
+  }
+
+  .hero-section-about .call-title {
+    text-align: center;
+    color: $secondary-color;
+    font-family: $fontFamily;
+    font-size: 68px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-section-about .description {
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    font-size: $p-size;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .hero-section-about .description span {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  .hero-section-about .venue-highlight p {
+    color: $primary-color;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    width: 100%;
+    padding-top: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .hero-section-about .venue-highlight .date-stamp {
+    font-size: $size-1;
+    font-weight: 700;
+    width: 375px;
+  }
+
+  .hero-section-about .venue-highlight .venue {
+    font-size: $p-size;
+    text-align: center;
+  }
+
+  .highlight {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .highlight .img-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .events {
+    position: relative;
+    display: flex;
+    gap: 20px;
+  }
+
+  .event {
+    position: relative;
+    width: 500px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .event .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 82, 66);
+    background: rgba($color: #ec5242, $alpha: 0.5);
+  }
+
+  .event .content p {
+    display: flex;
+    font-family: $fontFamily;
+    font-weight: $weight;
+    color: #fff;
+    justify-content: center;
+    margin-top: 25%;
+  }
+
+  .partner-about-hide {
+    display: none !important;
   }
 }

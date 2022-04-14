@@ -2,6 +2,8 @@
 const menuBtn = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuItems = document.querySelectorAll('.menu-item');
+const moreBtn = document.querySelector('.more-btn');
+const speakers = document.querySelectorAll('.speaker');
 
 function swapIcon() {
   if (mobileMenu.classList.contains('hide-menu')) {
@@ -22,5 +24,11 @@ menuItems.forEach((menuList) => {
   menuList.addEventListener('click', () => {
     mobileMenu.classList.toggle('hide-menu');
     swapIcon();
+  });
+});
+
+moreBtn.addEventListener('click', () => {
+  speakers.forEach((speaker) => {
+    speaker.classList.toggle('speaker-hide');
   });
 });
