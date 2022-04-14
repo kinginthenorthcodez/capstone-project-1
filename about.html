@@ -11,7 +11,19 @@
 </head>
 <body>
   <header class="about-header container-fluid p-3 m-3">
-    <div class="nav container-fluid">
+    <div class="profile-settings d-flex align-items-baseline justify-content-end">
+      <div class=" profile d-flex align-items-baseline">
+       <i class="fa fa-facebook p-3"></i>
+       <i class="fa fa-twitter p-3"></i>
+       
+       <ul class="nav top">
+           <li class="nav-item"><a href="#" class="nav-link">English</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">My Page</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+       </ul>
+   </div>
+   </div>
+    <div class="nav  desktop container-fluid">
         <img src="./assets/images/mobile_menu.png" id="menu-btn" alt="menu icon">
         <nav class="menu">
           <div class="logo">
@@ -31,7 +43,7 @@
               <a href="#call-out">Join</a>
             </li>
             <li class="menu-item">
-              <a href="#">Sponsor</a>
+              <a href="#sposor">Sponsor</a>
             </li>
             <li class="menu-item">
               <a href="#">News</a>
@@ -115,7 +127,7 @@
     </div>
 </section>
 
-<section class="speaker-partner container-fluid mb-5 mt-5">
+<section class="speaker-partner partner-about-hide container-fluid mb-5 mt-5" id="sposor">
   <div class="container-fluid partners">
       <div class="partner-title">
           <h3 class="text-center text-white pt-3">Partner</h3>
@@ -146,23 +158,22 @@
       </ul>
   </div>
 </section>
-<footer class="container-fluid bg-white d-flex g-5 p-3 mb-4 justify-content-center">
-    <div class="footer-logo">
-   <a class="navbar-brand text-black d-flex" href="index.html">
-              <div class="containe-fliud d-flex mt-5">
-                <img src="./assets/images/logo/logo.svg" class="img-logo" alt="logo">
-                <div class="logo-container d-flex flex-column">
-                  <span class="logo-text m-1 fs-1">&lt;Creative Space &gt;</span><span class="side-logo-text m-1 fs-2"> Zambia Summit 2022</span>
-                </div>
+<footer class="container-fluid footer-hide bg-dark d-flex g-5 p-3 mb-4 justify-content-around">
+  <div class="footer-logo">
+ <a class="navbar-brand  d-flex" href="index.html">
+            <div class="containe-fliud d-flex mt-5">
+              <img src="./assets/images/logo/logo.svg" class="img-logo" alt="logo">
+              <div class="logo-container d-flex flex-column">
+                <span class="logo-text m-1 fs-1">&lt;Creative Space &gt;</span><span class="side-logo-text m-1 fs-2"> Zambia Summit 2022</span>
               </div>
-              </a>
-    </div>
-    <div class="footer-info text-dark">
-      <p> Building safe coommunities to power creative innovations <br>and designs</p>
-      <p> 2022 Creative Space Sumit, Some Rights Reserved ⬇️</p>
-    </div>
+            </div>
+            </a>
+  </div>
+  <div class="footer-info text-white">
+    <p class="text-white"> Building safe coommunities to power creative innovations <br>and designs</p>
+    <p class="text-white"> 2022 Creative Space Sumit, Some Rights Reserved ⬇️</p>
+  </div>
 </footer>
-  
 <script src="./assets/js/script.js"></script>
 </body>
 </html>

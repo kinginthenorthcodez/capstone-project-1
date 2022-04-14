@@ -59,7 +59,12 @@
     align-items: center;
   }
 }
+
 @media screen and (max-width: 768px) {
+  .profile-settings {
+    display: none !important;
+  }
+
   header {
     background: url(../images/mobile_intro_bg.png);
     background-repeat: no-repeat;
@@ -300,6 +305,10 @@
     margin: 0 auto;
   }
 
+  #call-out a {
+    display: none !important;
+  }
+
   .more-btn button {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -394,7 +403,7 @@
   }
 
   .speaker-hide {
-    display: none;
+    display: none !important;
   }
 
   /* about page */
@@ -539,7 +548,15 @@
     width: 100px;
   }
 
+  .partner-hide {
+    display: none;
+  }
+
   /* Footer section */
+  .footer-home-hide {
+    display: none !important;
+  }
+
   .footer-logo {
     position: relative;
     left: 5%;
@@ -569,12 +586,541 @@
     padding: 20px;
   }
 }
+
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .logo {
-    border: 2px solid green;
-    width: 400px;
+  .profile-settings {
+    background: #36393f;
+    width: 100%;
     height: 50px;
+  }
+
+  .profile-settings .profile {
+    position: relative;
+    right: 10%;
+    color: #d3d3d3;
+  }
+
+  nav .menu-items .menu-item a {
+    text-decoration: none;
+    padding: 10px;
+    color: #272a31;
+  }
+
+  nav .menu-items a:focus,
+  nav .menu-items a:active {
+    color: #ec5242;
+  }
+
+  nav .menu-items a:hover {
+    border: 2px solid #ec5242;
+  }
+
+  .profile-settings .nav .nav-item a {
+    color: #d3d3d3;
+    font-family: "Lato", sans-serif;
+  }
+
+  .nav #menu-btn {
+    display: none;
+  }
+
+  .nav .menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+    background: #f7f5f5;
+  }
+
+  nav .img-logo {
+    width: 50px;
+    margin: 0;
+  }
+
+  nav a.logo {
+    position: relative;
+    left: 10%;
+    color: #272a31;
+    font-weight: 400;
+    font-size: 30px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  nav .logo-text {
+    color: #ec5242;
+    font-weight: bolder;
+  }
+
+  nav .side-logo-text {
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  nav .menu-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    right: 10%;
+  }
+
+  nav .menu-items .menu-item {
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  nav .menu-items .active {
+    border: 2px solid #ec5242;
+  }
+
+  /* Header Section */
+  .hero-section {
+    background: url(../images/main_big.png);
+    background-repeat: no-repeat;
+    margin-top: 2px;
+    height: 700px;
+  }
+
+  .hero-section .inner-hero {
+    width: 75%;
+  }
+
+  .hero-section .call {
+    display: flex;
+    justify-content: flex-start;
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+  }
+
+  .hero-section .call-title {
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .hero-section .description {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: #fff;
+    width: 72%;
+    position: relative;
+    top: 55px;
+    padding-top: 20px;
+  }
+
+  .about-main p span {
+    color: #ec5242;
+    font-weight: 600;
+  }
+
+  .hero-section .description span {
+    color: #ec5242;
+    font-weight: 600;
+  }
+
+  .footer-info p {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+
+  .about-main p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 18px;
+    background: #fff;
+    padding-top: 20px;
+  }
+
+  .hero-section .venue-highlight p {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    line-height: 1.7;
+  }
+
+  .hero-section .venue-highlight .date-stamp {
+    font-size: 35px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .hero-section .venue-highlight .venue {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .main-program {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    background: url(../images/pattern_bg.png);
+    background-color: #272a31;
+  }
+
+  .main-program .program-title h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d3d3d3;
+  }
+
+  .about-events hr {
+    width: 200px;
+    height: 3px;
+    margin: 0 auto;
+    color: #ec5242;
+  }
+
+  .main-program .program-title hr {
+    width: 150px;
+    height: 5px;
+    color: #ec5242;
+    margin: 0 auto;
+  }
+
+  .main-program .programs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .main-program .programs .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    max-height: 500px;
+    gap: 20px;
+    padding: 10px;
+    background: #6a6b6d;
+    opacity: 0.8;
+  }
+
+  .main-program .program .program-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .main-program .program h3 {
+    font-family: "Lato", sans-serif;
+    width: 200px;
+    color: #ec5242;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .main-program .program p {
+    width: 100%;
+    max-width: 200px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-right: 15px;
+    margin-right: 10px;
+  }
+
+  .more-btn button {
+    display: none;
+  }
+
+  #call-out button {
+    display: none;
+  }
+
+  #call-out a {
+    display: flex;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    color: #d3d3d3;
+    font-size: 28px;
+  }
+
+  .speakers-sec {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .speakers-sec .speaker-title h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: #272a31;
+  }
+
+  .speakers-sec .speaker-title hr {
+    width: 150px;
+    height: 5px;
+    color: #ec5242;
+    margin: 0 auto;
+  }
+
+  .speakers-sec .speakers {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .speakers-sec .speakers .speaker {
+    display: flex;
+    width: 50%;
+    flex-basis: 700px;
+    height: auto;
+    margin: 10px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .speakers-sec .speaker .img-profile {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+  }
+
+  .speakers-sec .speakers .speaker-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 30px;
+  }
+
+  .speakers-sec .speakers .speaker-name {
+    font-family: "Lato", sans-serif;
+    color: #272a31;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .speakers-sec .speakers .role {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -15px;
+    color: #ec5242;
+  }
+
+  .speakers-sec .speakers .bio {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #272a31;
+  }
+
+  .speaker-partner {
+    background: #3e4044;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .partner-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .partner-title .hr-lines {
+    width: 100px;
+    height: 1px;
+    background: #ec5242;
+    margin: 0 auto;
+  }
+
+  .event img {
+    width: 500px;
+  }
+
+  .partner-items .partner img {
+    width: 100px;
+  }
+
+  /* Footer section */
+  .footer-logo {
+    position: relative;
+    left: 5%;
+  }
+
+  .footer-logo .img-logo {
+    width: 50px;
+    margin: 0;
+  }
+
+  .footer-logo .logo-text {
+    color: var(--secondary);
+    font-weight: bolder;
+  }
+
+  .footer-logo .side-logo-text {
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .footer-info {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* about page */
+  .hero-section-about {
+    background: url(../images/about_bg_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+
+  .hero-section-about .call {
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .hero-section-about .call-title {
+    text-align: center;
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ec5242, #3e4044);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-section-about .description {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .hero-section-about .description span {
+    color: #ec5242;
+    font-weight: 600;
+  }
+
+  .hero-section-about .venue-highlight p {
+    color: #272a31;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    padding-top: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .hero-section-about .venue-highlight .date-stamp {
+    font-size: 28px;
+    font-weight: 700;
+    width: 375px;
+  }
+
+  .hero-section-about .venue-highlight .venue {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .highlight {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .highlight .img-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .events {
+    position: relative;
+    display: flex;
+    gap: 20px;
+  }
+
+  .event {
+    position: relative;
+    width: 500px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .event .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ec5242;
+    background: rgba(236, 82, 66, 0.5);
+  }
+
+  .event .content p {
+    display: flex;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    justify-content: center;
+    margin-top: 25%;
+  }
+
+  .partner-about-hide {
+    display: none !important;
   }
 }
 
