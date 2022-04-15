@@ -63,6 +63,7 @@ body {
     align-items: center;
   }
 }
+
 @media screen and (max-width: 768px) {
   .profile-settings {
     display: none !important;
@@ -593,6 +594,7 @@ body {
     padding: 20px;
   }
 }
+
 /* Desktop version */
 @media screen and (min-width: 768px) {
   .profile-settings {
@@ -614,7 +616,7 @@ body {
   }
 
   nav .menu-items a:focus,
-nav .menu-items a:active {
+  nav .menu-items a:active {
     color: #ec5242;
   }
 
