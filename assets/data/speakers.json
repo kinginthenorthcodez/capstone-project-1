@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Peter Mwansa",
+        "role": "Founder of HPML,Fashion Designer",
+        "bio": "Peter is an emerging fashion designer and award winner of Lusaka July",
+        "profileImg": "peter.jpg"
+    },
+    {
+        "name": "Lukonga Lindunda",
+        "role": "Founder of Bongo Hive,CEO",
+        "bio": " Lukonga is a Startup Ecosystem Builder who is also a Mandela Washington Fellow and has 14 years of experience working with entrepreneurs and development partners.",
+        "profileImg": "Lukonga-Lindunda.jpg"
+    },
+    {
+        "name": "mix kasamwa",
+        "role": "Content Creator, Artist",
+        "bio": "mix kasamwa is Visual creative performing artist behind LSK anthem and Youtube show.",
+        "profileImg": "mixkasamwa.jpg"
+    },
+    {
+        "name": "Nyemba Tembo",
+        "role": "Content Creator",
+        "bio": "A highly ambitious and hard-working Broadcast Journalism graduate from the University of the West of England with expertise in both traditional and digital",
+        "profileImg": "nyemba.jpg"
+    },
+    {
+        "name": "Pompi Nyathando",
+        "role": "Musical artist, CEO Atmosphere Nation & Lota House ",
+        "bio": "Pompi is a Musician, Artist, Entrepreneur, and CEO of Atmosphere Nation & Lota House (House of dreamers) , who are Innovators and leaders in the Zambian media industry..",
+        "profileImg": "Pompi.jpg"
+    },
+    {
+        "name": "David kazadi",
+        "role": "Founder of Kazadi Films,CEO",
+        "bio": "David is available as a Director and as a Cinematographer with experience across multiple genres from documentaries; broadcast, theatrical or for the web,",
+        "profileImg": "david-kazadi.jpg"
+    },
+    {
+        "name": "Emma Rose",
+        "role": "Content Creator, Actress",
+        "bio": "Emma is an Actress Content Creator American born Zambian raised.",
+        "profileImg": "ema-rose.jpg"
+    },
+    {
+        "name": "Isaac M Maqueen",
+        "role": "Founder,CEO Codezcube Tech",
+        "bio": "As tech entusiast and AI expert,His search and support for creative spaces powers his coommunity",
+        "profileImg": "maqueen.jpg"
+    },
+    {
+        "name": "Perseus Mlambo",
+        "role": "Founder Zazu ,CEO",
+        "bio": "Perseus is the founder and CEO of Zazu. Zazu are building a digital bank for Africa's future.",
+        "profileImg": "zazufounder.jpg"
+    },
+    {
+        "name": "kandam yethu",
+        "role": "Founder Nkanda Yatu,Designer",
+        "bio": "Nkanda Yathu Bespoke fashion designer:The First Zambian Designer To Showcase at Windhoek Fashion Week",
+        "profileImg": "nkanda-yathu.jpg"
+    }
+
+]

@@ -35,6 +35,10 @@ $weight: 400;
   margin: 0;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 390px) {
   .main-program .programs .program {
     display: flex;
@@ -125,7 +129,7 @@ $weight: 400;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     transition: ease-in-out 2s;
   }
 
@@ -339,9 +343,13 @@ $weight: 400;
     display: none !important;
   }
 
-  .more-btn button {
+  .more-btn {
+    display: flex;
     font-family: $fontFamily;
     font-weight: $weight;
+    justify-content: center;
+    position: relative;
+    top: 50px;
     width: 98%;
     height: 90px;
     border-style: none;
@@ -703,7 +711,7 @@ $weight: 400;
 
   nav .menu-items .menu-item {
     font-family: $fontFamily;
-    font-size: $size-1;
+    font-size: 20px;
     padding: 10px;
   }
 
@@ -885,7 +893,7 @@ $weight: 400;
     margin-right: 10px;
   }
 
-  .more-btn button {
+  .more-btn {
     display: none;
   }
 
@@ -906,6 +914,14 @@ $weight: 400;
     width: 100%;
     flex-direction: column;
     height: auto;
+  }
+
+  .speaker-hider {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .speakers-sec .speaker-title h2 {
@@ -936,7 +952,7 @@ $weight: 400;
   .speakers-sec .speakers .speaker {
     display: flex;
     width: 50%;
-    flex-basis: 700px;
+    flex-basis: 600px;
     height: auto;
     margin: 10px;
     justify-content: space-between;
