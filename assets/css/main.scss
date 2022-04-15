@@ -802,6 +802,7 @@ body {
   }
 
   .hero-section .venue-highlight .date-stamp {
+    font-family: 'COCOGOOSE', sans-serif;
     font-size: 35px;
     font-weight: 700;
     width: 100%;
@@ -1053,7 +1054,7 @@ body {
 
   .footer-info {
     color: $primary-color;
-    font-family: $fontFamily;
+    font-family: 'COCOGOOSE', sans-serif;
     display: flex;
     width: 600px;
     flex-direction: column;

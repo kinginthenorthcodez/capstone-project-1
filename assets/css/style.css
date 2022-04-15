@@ -769,6 +769,7 @@ body {
   }
 
   .hero-section .venue-highlight .date-stamp {
+    font-family: "COCOGOOSE", sans-serif;
     font-size: 35px;
     font-weight: 700;
     width: 100%;
@@ -1019,7 +1020,7 @@ body {
 
   .footer-info {
     color: #272a31;
-    font-family: "Lato", sans-serif;
+    font-family: "COCOGOOSE", sans-serif;
     display: flex;
     width: 600px;
     flex-direction: column;
