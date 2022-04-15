@@ -9,7 +9,7 @@ const mediaQueryData = window.matchMedia('(max-width: 768px)');
 /* Fetch Data */
 const displayTwo = (ob) => {
   let templateSpeaker = '';
-  for (let i = 0; i < 2; i += 1){
+  for (let i = 0; i < 2; i += 1) {
     templateSpeaker += `<div class="speaker">
     <img src="./assets/images/speakers/${ob[i].profileImg}" alt="profile image" class="img-profile">
     <div class="speaker-info">
@@ -20,11 +20,11 @@ const displayTwo = (ob) => {
     </div>`;
   }
   speakerList.innerHTML = templateSpeaker;
-}
+};
 
 const displayAll = (speakerObj) => {
   let templateSpeaker = '';
-  for (let i = 0; i < speakerObj.length; i += 1){
+  for (let i = 0; i < speakerObj.length; i += 1) {
     templateSpeaker += `<div class="speaker">
     <img src="./assets/images/speakers/${speakerObj[i].profileImg}" alt="profile image" class="img-profile">
     <div class="speaker-info">
@@ -35,13 +35,13 @@ const displayAll = (speakerObj) => {
     </div>`;
   }
   speakerList.innerHTML = templateSpeaker;
-}
+};
 
 const mediaTest = (e, dataOb) => {
   if (e.matches) {
     displayTwo(dataOb);
   } else {
-     displayAll(dataOb);
+    displayAll(dataOb);
   }
 };
 
@@ -62,7 +62,6 @@ speakerData.then((obj) => {
 
   /* Media Query */
   mediaTest(mediaQueryData, obj);
-
 });
 
 mediaQueryData.addListener(mediaTest);
@@ -87,18 +86,4 @@ menuItems.forEach((menuList) => {
     mobileMenu.classList.toggle('hide-menu');
     swapIcon();
   });
-});
-
-speakerData.then((speakers) => {
-let templateSpeaker = '';
-speakers.forEach((speaker) => {
-  templateSpeaker += `<div class="speaker">
-  <img src="./assets/images/speakers/${speaker.profileImg}" alt="profile image" class="img-profile">
-  <div class="speaker-info">
-    <h3 class="speaker-name">${speaker.name}</h3>
-    <p class="role">${speaker.role}</p>
-    <p class="bio">${speaker.bio}</p>
-  </div>
-  </div>`;
-});
 });
