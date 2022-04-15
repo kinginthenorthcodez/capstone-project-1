@@ -3,46 +3,13 @@ const menuBtn = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuItems = document.querySelectorAll('.menu-item');
 const moreBtn = document.querySelector('.more-btn');
-const speakerz = document.querySelectorAll('.speaker');
-const speakerHide = document.querySelector('.speaker-hider');
 const speakerList = document.querySelector('#speakerList');
 const mediaQueryData = window.matchMedia('(max-width: 768px)');
 
 /* Fetch Data */
-
-const speakerData = fetch('./assets/data/speakers.json').then((result) => result.json());
-speakerData.then((obj)=>{
-  moreBtn.addEventListener('click', () => {
-    const re = /More/;
-    const flag = re.test(moreBtn.textContent);
-    
-    if (flag) {
-      moreBtn.innerHTML = "Less ⬆️";
-      displayAll(obj);
-    } else {
-      moreBtn.innerHTML = "More ⬇️";
-      displayTwo(obj);
-    }
-  });
-
-  /* Media Query */
-  mediaTest(mediaQueryData,obj);
- 
-});
-
-const mediaTest = (e,dataOb) => {
-  if (e.matches){
-    displayTwo(dataOb);
-  } else {
-     displayAll(dataOb);
-  }
-};
-
-mediaQueryData.addListener(mediaTest);
-
 const displayTwo = (ob) => {
   let templateSpeaker = '';
-  for (let i = 0; i < 2; i++){
+  for (let i = 0; i < 2; i += 1){
     templateSpeaker += `<div class="speaker">
     <img src="./assets/images/speakers/${ob[i].profileImg}" alt="profile image" class="img-profile">
     <div class="speaker-info">
@@ -57,7 +24,6 @@ const displayTwo = (ob) => {
 
 const displayAll = (speakerObj) => {
   let templateSpeaker = '';
-  console.log(speakerObj);
   for (let i = 0; i < speakerObj.length; i += 1){
     templateSpeaker += `<div class="speaker">
     <img src="./assets/images/speakers/${speakerObj[i].profileImg}" alt="profile image" class="img-profile">
@@ -70,6 +36,36 @@ const displayAll = (speakerObj) => {
   }
   speakerList.innerHTML = templateSpeaker;
 }
+
+const mediaTest = (e, dataOb) => {
+  if (e.matches) {
+    displayTwo(dataOb);
+  } else {
+     displayAll(dataOb);
+  }
+};
+
+const speakerData = fetch('./assets/data/speakers.json').then((result) => result.json());
+speakerData.then((obj) => {
+  moreBtn.addEventListener('click', () => {
+    const re = /More/;
+    const flag = re.test(moreBtn.textContent);
+
+    if (flag) {
+      moreBtn.innerHTML = 'Less ⬆️';
+      displayAll(obj);
+    } else {
+      moreBtn.innerHTML = 'More ⬇️';
+      displayTwo(obj);
+    }
+  });
+
+  /* Media Query */
+  mediaTest(mediaQueryData, obj);
+
+});
+
+mediaQueryData.addListener(mediaTest);
 
 function swapIcon() {
   if (mobileMenu.classList.contains('hide-menu')) {
