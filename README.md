@@ -6,6 +6,7 @@
 - Zambia's creative minds making impact and Technology
   breakthrough are comming together to re-think and re-imagine design.
 
+![screenshot](./app_screenshot.png)
 
 ## Built With
 
@@ -16,8 +17,8 @@
 
 ## Live Demo (available)
 ### New Updates coming.
-[Live Demo Link](https://kinginthenorthcodez.github.io/capstone-project-1/)
-[Video Demo](https://www.loom.com/share/1ee6356a13dd4db2a08812330f85f195)
+- [Live Demo Link](https://kinginthenorthcodez.github.io/capstone-project-1/)
+- [Video Demo](https://www.loom.com/share/1ee6356a13dd4db2a08812330f85f195)
 
 
 ## Getting Started
