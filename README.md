@@ -14,9 +14,9 @@
 - LOCAL STORAGE API
 - LINTERS
 
-## Live Demo (Not available)
-
-[Live Demo Link](https://livedemo.com)
+## Live Demo (available)
+### New Updates coming.
+[Live Demo Link](https://kinginthenorthcodez.github.io/capstone-project-1/)
 [Video Demo](https://www.loom.com/share/1ee6356a13dd4db2a08812330f85f195)
 
 
